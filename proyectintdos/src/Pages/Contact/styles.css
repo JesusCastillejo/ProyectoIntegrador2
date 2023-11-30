@@ -1,0 +1,48 @@
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .formContact {
+    height: 400px;
+    width: 350px;
+    margin: 30px;
+    background-color: rgba(255, 119, 0, 1);
+    color: white;
+    padding: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 15px;
+}
+
+main .formContact div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+main .formContact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+main .formContact input[type="text"],
+main .formContact textarea {
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+}
+
+main .formContact input[type="submit"] {
+    background-color: rgba(0, 159, 183, 1);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+main .formContact input[type="submit"]:hover {
+    background-color: rgba(46, 64, 87, 1);
+}

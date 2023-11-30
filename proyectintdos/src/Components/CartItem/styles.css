@@ -1,0 +1,54 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: rgba(255, 119, 0, 0.5);
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.cart-item h2 {
+  margin: 0;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.cart-item h3 {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+
+.divCounter{
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.divCounter .counter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 50px;
+  padding: 5px;
+}
+
+.divCounter .moreless{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(204, 204, 204);
+  border-radius: 50%;
+  width: 30px;
+}

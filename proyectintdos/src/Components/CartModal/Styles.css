@@ -1,0 +1,81 @@
+.modal-content {
+  background-color: #f4f4f4;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgb(135, 135, 135);
+  border-radius: 10px;
+  width: 80%;
+}
+
+.headermodal{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: rgba(255, 119, 0, 1);
+  color: white;
+  width: auto;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgba(0, 159, 183, 1);
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: rgba(0, 159, 183, 1);
+  color: white;
+}
+
+.modalbutton {
+  background-color: rgba(0, 159, 183, 1);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.modalbutton:hover {
+  background-color: rgba(0, 159, 183, 1);
+}
+
+.total{
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.checkout{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.checkout button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 159, 183, 1);
+  width: 120px;
+  height: 50px;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.checkout button:hover{
+  background-color: rgba(46, 64, 87, 1);
+}

@@ -1,0 +1,104 @@
+.toy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.toy h1 {
+    font-family: /* f.$font-family */;
+    font-size: 36px;
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.accesory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.accesory article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+    transition: all 0.3s ease-out;
+    background-color: rgba(255, 119, 0, 1);
+}
+
+.accesory article:hover {
+    transform: scale(1.03);
+}
+
+.accesory article img {
+    width: 100%;
+    object-fit:cover;
+    width: 300px;
+    height: 300px;
+}
+
+.accesory article section {
+    padding: 1rem;
+    color: white;
+}
+
+.accesory article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.accesory article h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+
+.accesory article .precios {
+    margin-top: 20px;
+    color: rgba(155, 41, 21, 1);
+    font-weight: bold;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.accesory article .precio-linea {
+    color: black;
+    text-decoration-line: line-through;
+    font-size: 12px;
+}
+
+.accesory article .boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.accesory article .boton img {
+    height: 15px;
+    width: 15px;
+}
+
+.accesory article button {
+    background-color: rgba(0, 159, 183, 1);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 2rem;
+    cursor:pointer;
+}
+
+.accesory article button:hover,
+.accesory article button:focus {
+    background-color: rgba(46, 64, 87, 1);
+}

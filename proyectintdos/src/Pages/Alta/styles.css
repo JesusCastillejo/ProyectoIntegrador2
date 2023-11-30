@@ -1,0 +1,110 @@
+.formAlta {
+    margin: 30px;
+}
+
+.formAlta form {
+    background-color: rgba(255, 119, 0, 1);
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formAlta form div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.formAlta form label {
+    width: 30%;
+    min-width: 120px;
+    padding-right: 20px;
+}
+
+.formAlta form input[type="text"],
+.formAlta form textarea,
+.formAlta form select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(204, 204, 204);
+}
+
+.formAlta .formstock{
+    border-bottom: 2px solid rgb(204, 204, 204) ;
+}
+
+
+.formAlta form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.formAlta input[type="radio"] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAlta input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(204, 204, 204);
+    vertical-align: middle;
+}
+
+.formAlta input[type="radio"]:checked + label:before {
+    background-color: rgb(204, 204, 204);
+}
+
+.formAlta input[type="file"] + label {
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: rgb(204, 204, 204);
+    color: white;
+    border-radius: 5px;
+}
+
+.formAlta input[type="submit"] {
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: rgba(0, 159, 183, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.formAlta input[type="submit"]:hover {
+    background-color: rgba(46, 64, 87, 1);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.formAlta option{
+    color: black
+}
+
+@media (max-width: 1024px) {
+    .formAlta form label,
+    .formAlta form input[type="text"],
+    .formAlta form textarea,
+    .formAlta form select {
+        width: 100%;
+        display:block;
+    }
+}

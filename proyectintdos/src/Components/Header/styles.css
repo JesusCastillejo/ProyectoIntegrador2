@@ -1,0 +1,128 @@
+/* //---------------------- Header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 119, 0, 1);
+    color: white;
+}
+
+/* //----------------Logo */
+
+.logo-container{
+    font-size: 24px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* // ---------------------- Barra de busqueda */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.search-container input[type="text"] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgba(155, 41, 21, 1);
+    color: lightsalmon;
+}
+
+.search-container button {
+    width: 80px;
+    height: 80px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search-container .img-back{
+    background-image: url(./icon/footprinticon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+}
+
+.search-container .img-back:active {
+    transform: scale(0.9);
+}
+
+/* //--------------  menu */
+
+.header .nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    font-weight: lighter;
+
+}
+
+/* //------------------------------------------hambur */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1020px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

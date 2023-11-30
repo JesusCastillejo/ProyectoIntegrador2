@@ -1,0 +1,30 @@
+.mainus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainus .us {
+    height: 500px;
+    width: 600px;
+}
+
+.artus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 119, 0, 1);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+.artus h1 {
+    
+    font-size: 36px;
+}
+
+.artus img {
+    border-radius: 20px;
+}
