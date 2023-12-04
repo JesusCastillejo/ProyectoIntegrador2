@@ -47,8 +47,7 @@ const CartItem = ({ item, onIncrease, onDecrease, onRemove }) => {
         <input className="counter" type="number" value={item.quantity} readOnly />
         <button className='moreless' onClick={handleDecrease}><i class="fa fa-minus" aria-hidden="true"></i></button>
       </div>
-      <button onClick={handleRemove}><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-      <ToastContainer />
+      <button className='trash' onClick={handleRemove}><i class="fa fa-trash-o" aria-hidden="true"></i></button>
     </div>
   );
 };

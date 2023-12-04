@@ -73,7 +73,7 @@ const Header = ({ cartItems, setCart }) => {
                     <div className="line"></div>
                 </div>
                 <ul className="nav-links">
-                    <li><Link to={'/home'}>Home</Link></li>
+                    <li><Link to={'/'}>Home</Link></li>
                     <li><Link to={'/Alta'}>Alta</Link></li>
                     <li><Link to={'/Contact'}>Contacto</Link></li>
                     <li><Link to={'/About'}>Nosotros</Link></li>
