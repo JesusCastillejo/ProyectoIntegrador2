@@ -6,7 +6,7 @@
 }
 
 .toy h1 {
-    font-family: /* f.$font-family */;
+    font-family: 'Chewy', cursive;
     font-size: 36px;
 }
 
@@ -15,6 +15,7 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .accesory {
@@ -101,4 +102,10 @@
 .accesory article button:hover,
 .accesory article button:focus {
     background-color: rgba(46, 64, 87, 1);
+}
+
+.errorAccesorios{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 30px;
 }

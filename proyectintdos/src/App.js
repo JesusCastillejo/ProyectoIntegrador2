@@ -13,12 +13,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const [search, setSearch] = useState("");
 
   return (
     <> 
-      <Header cartItems={cartItems} setCart={setCartItems} />
+      <Header cartItems={cartItems} setCart={setCartItems} search={search} setSearch={setSearch} />
       <Routes>
-        <Route path="/" element={<Home setCart={setCartItems} />} />
+        <Route path="/" element={<Home setCart={setCartItems} search={search} />} />
         <Route path="/Alta" element={<Alta/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/About" element={<About/>} />

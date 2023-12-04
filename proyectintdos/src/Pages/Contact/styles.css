@@ -1,6 +1,7 @@
 .contact {
     display: flex;
     justify-content: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contact .formContact {

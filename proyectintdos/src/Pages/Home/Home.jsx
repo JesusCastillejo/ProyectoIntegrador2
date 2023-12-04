@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import iconcart from './Icon/iconcart.svg';
 import { ToastContainer, toast } from "react-toastify";
 
-const Home = ({ setCart }) => {
+const Home = ({ setCart, search }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -45,35 +45,48 @@ const Home = ({ setCart }) => {
     }
   };
 
-  return (
-    <main className="main">
-      {data && Object.keys(data).map((key) => (
-        <div className="accesory" key={key}>
-          <article>
-            <picture>
-              <img src={data[key].foto} alt={data[key].nombre} />
-            </picture>
+  const filteredData = data.filter(item => item.nombre.toLowerCase().includes(search.toLowerCase()) || item.marca.toLowerCase().includes(search.toLowerCase()));
 
-            <section>
-              <h2>{data[key].nombre}</h2>
-              <h3><span className="by">de</span> {data[key].marca}</h3>
-              <p>{data[key].descripcionlarga}</p>
-              <div className="precios">
-                <h2>${data[key].precio * 0.85}</h2>
-                <p className="precio-linea">${data[key].precio}</p>
-              </div>
-              <div className="boton">
-                <button onClick={() => addToCart(data[key])}>
-                  <img src={iconcart} alt="" />
-                  Comprar
-                </button>
-              </div>
-            </section>
-          </article>
-        </div>
-      ))}
-      <ToastContainer />
-    </main>
+  return (
+    <>
+      <div>
+        <section id="toys" class="toy">
+          <h1>Accesorios</h1>
+        </section>
+      </div>
+      <main className="main">
+        {filteredData.length > 0 ? (
+          filteredData.map((item, key) => (
+            <div className="accesory" key={key}>
+              <article>
+                <picture>
+                  <img src={item.foto} alt={item.nombre} />
+                </picture>
+
+                <section>
+                  <h2>{item.nombre}</h2>
+                  <h3><span className="by">de</span> {item.marca}</h3>
+                  <p>{item.descripcionlarga}</p>
+                  <div className="precios">
+                    <h2>${item.precio * 0.85}</h2>
+                    <p className="precio-linea">${item.precio}</p>
+                  </div>
+                  <div className="boton">
+                    <button onClick={() => addToCart(item)}>
+                      <img src={iconcart} alt="" />
+                      Comprar
+                    </button>
+                  </div>
+                </section>
+              </article>
+            </div>
+          ))
+        ) : (
+          <p className='errorAccesorios'>No se encontró el producto</p>
+        )}
+        <ToastContainer />
+      </main>
+    </>
   );
 };
 

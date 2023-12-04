@@ -1,16 +1,18 @@
 .formAlta {
     margin: 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .formAlta form {
     background-color: rgba(255, 119, 0, 1);
     border-radius: 20px;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .formAlta form div {

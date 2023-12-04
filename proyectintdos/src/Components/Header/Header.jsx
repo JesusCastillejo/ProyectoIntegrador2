@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import CartModal from '../CartModal/CartModal.jsx';
 import iconcart from '../../Pages/Home/Icon/iconcart.svg';
 
-const Header = ({ cartItems, setCart }) => {
+const Header = ({ cartItems, setCart, search, setSearch }) => {
     const [modalIsOpen, setIsOpen] = React.useState(false);
 
     function openModal() {
@@ -60,7 +60,7 @@ const Header = ({ cartItems, setCart }) => {
             </div>
 
             <div className="search-container">
-                <input type="text" placeholder="Buscar productos" />
+                <input type="text" placeholder="Buscar productos" value={search} onChange={(e) => setSearch(e.target.value)} />
                 <div className="img-back">
                     <button></button>
                 </div>

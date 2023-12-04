@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .mainus .us {
@@ -21,7 +23,7 @@
 }
 
 .artus h1 {
-    
+    font-family: 'Chewy', cursive;
     font-size: 36px;
 }
 
