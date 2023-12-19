@@ -4,7 +4,7 @@ import iconcart from './Icon/iconcart.svg';
 import { ToastContainer, toast } from "react-toastify";
 
 const Home = ({ setCart, search }) => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -45,7 +45,11 @@ const Home = ({ setCart, search }) => {
     }
   };
 
-  const filteredData = data.filter(item => item.nombre.toLowerCase().includes(search.toLowerCase()) || item.marca.toLowerCase().includes(search.toLowerCase()));
+  const filteredData = data.filter(
+    item => 
+    item.nombre.toLowerCase().includes(search.toLowerCase()) || 
+    item.marca.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <>
